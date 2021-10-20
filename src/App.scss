@@ -6,7 +6,7 @@ $light-yellow: #ffb606;
 //mixin
 @import 'mixin';
 @import 'button';
-// @import 'share'; 有問題 可能重安裝
+// @import 'share'; 
 
 //banner
 .res-banner {
@@ -76,7 +76,6 @@ $light-yellow: #ffb606;
 }
 
 #address {
-  // width: 500px;
   width: 45%;
   height: 50px;
   border-radius: 50px;
@@ -234,10 +233,14 @@ $light-yellow: #ffb606;
     font-size: 24px;
     font-weight: 700;
   }
+  p{
+    font-size: 16px;
+    margin-top: 2px;
+  }
 
   .res-popular-body {
     background-color: rgba(255, 182, 6, 0.2);
-    padding: 5px 10px;
+    padding: 10px 20px 25px;
     border-radius: 0 0 15px 15px;
   }
   @include mobile {

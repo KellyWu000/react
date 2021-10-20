@@ -15,7 +15,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
@@ -45,7 +45,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
@@ -76,7 +76,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
@@ -107,7 +107,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
@@ -137,7 +137,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
@@ -167,7 +167,7 @@ function ProductCard(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '165px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
