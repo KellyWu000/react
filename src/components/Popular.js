@@ -17,14 +17,14 @@ function Popular(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '160px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
                 />
               </div>
 
-              <div className="res-popular-body fw-700  ">
+              <div className="res-popular-body ">
                 <div className="res-popular-title d-flex justify-content-between mt-3">
                   <h3>生活倉廚</h3>
                   <span>
@@ -55,14 +55,14 @@ function Popular(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '160px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
                 />
               </div>
 
-              <div className="res-popular-body fw-700  ">
+              <div className="res-popular-body   ">
                 <div className="res-popular-title d-flex justify-content-between mt-3">
                   <h3>生活倉廚</h3>
                   <span>
@@ -93,14 +93,14 @@ function Popular(props) {
                   alt=""
                   style={{
                     width: '100%',
-                    height: '180px',
+                    height: '160px',
                     borderRadius: '15px 15px 0 0',
                     objectFit: 'cover',
                   }}
                 />
               </div>
 
-              <div className="res-popular-body fw-700  ">
+              <div className="res-popular-body ">
                 <div className="res-popular-title d-flex justify-content-between mt-3">
                   <h3>生活倉廚</h3>
                   <span>

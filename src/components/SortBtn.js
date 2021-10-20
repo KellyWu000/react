@@ -1,14 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { RiMapPinLine } from 'react-icons/ri'
 import { imgUrl } from '../config'
-function SortBtn(props) {
+function SortBtn({mapData}) {
+  const history = useHistory();
+
+
+  const goToMap = () => {
+    history.push({
+      pathname:'/map',
+      state: { mapData }
+    });
+  }
   return (
     <>
       <div className="row ">
         <div className="col-md-4 col-12 ">
-          <Link to="/map">
-            <button type="button" class="btn orange-btn ">
+            <button type="button" class="btn orange-btn" onClick={goToMap}>
               <RiMapPinLine
                 style={{
                   color: '#FB6107',
@@ -18,7 +26,6 @@ function SortBtn(props) {
               />{' '}
               地圖模式
             </button>
-          </Link>
         </div>
         <div className="col-md-4  col-6 ">
           <select

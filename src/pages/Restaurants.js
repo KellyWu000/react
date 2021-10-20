@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import '../App.scss'
 import { BsCursor } from 'react-icons/bs'
 import { imgUrl } from '../config'
@@ -7,21 +7,28 @@ import ResList from './ResList'
 import SortBtn from '../components/SortBtn'
 import Popular from '../components/Popular'
 import TitleBorder from '../components/TitleBorder'
-import { useState, useEffect } from 'react'
 import Geocode from 'react-geocode'
 import { apiKey } from '../api/googleApi'
 import { useHistory } from 'react-router-dom'
+import { data } from '../data'
 
 function Restaurants(props) {
   const [address, setAddress] = useState('')
+  const [apiData, setApiData] = useState([]);
   const history = useHistory()
-
   const myRef = useRef(null)
 
   const onSubmit = () => {
     // history.push('/map')
+    setApiData(data);
     myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setApiData(data);
+  //   }, 1000);
+  // },[])
 
   return (
     <>
@@ -62,10 +69,11 @@ function Restaurants(props) {
       </div>
 
       <div className="container d-flex  justify-content-center ">
-        <SortBtn />
+        <SortBtn mapData={apiData}/>
       </div>
       <div className="container mt-35" >
-        <ResList />
+
+        <ResList listData={apiData}/>
       </div>
       <Popular />
     </>
