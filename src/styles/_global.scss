@@ -23,4 +23,50 @@ code {
     monospace;
 }
 
+//客製
+.ma-80 {
+  margin: 80px auto;
+}
+.mt-35 {
+  margin-top: 35px;
+}
 
+.fw-700 {
+  font-weight: 700;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+//共用區
+.titleBorder {
+  width: 100%;
+  border-bottom: 2px solid $dark-green;
+  position: relative;
+  margin: 0 auto;
+  .title-fz {
+    font-size: 32px;
+    color: $dark-green;
+  }
+  .res-title {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0px 20px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+  }
+
+  @include mobile {
+    .res-title {
+      top: -13px;
+      padding: 0px 10px;
+    }
+    .title-fz {
+      font-size: 24px;
+    }
+  }
+}

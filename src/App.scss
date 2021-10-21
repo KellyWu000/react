@@ -1,327 +1,327 @@
-//顏色
-$dark-green: #2a593e;
-$light-green: #8fc065;
-$light-orange: #fb6107;
-$light-yellow: #ffb606;
-//mixin
-@import 'mixin';
-@import 'button';
-// @import 'share'; 
+// //顏色
+// $dark-green: #2a593e;
+// $light-green: #8fc065;
+// $light-orange: #fb6107;
+// $light-yellow: #ffb606;
 
-//banner
-.res-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  background-size: cover;
-  width: 100%;
-  max-height: 700px;
-  .res-slogan {
-    padding-top: 50px;
-  }
-  h1 {
-    text-align: center;
-    font-size: 60px;
-    padding-top: 100px;
-    color: $light-orange;
-    font-weight: 700;
-  }
+// //import檔案
+// @import './styles/mixin';
+// @import './styles/button';
+// @import './styles/resbanner';
+// @import './styles/share';
 
-  h2 {
-    text-align: center;
-    font-size: 44px;
-    color: $light-green;
-    font-weight: 700;
-    padding-bottom: 20px;
-  }
-  @include mobile {
-    height: 50vh;
-    h1 {
-      font-size: 30px;
-      padding-top: 70px;
-    }
-    h2 {
-      font-size: 28px;
-      padding-bottom: 3px;
-    }
-  }
-}
 
-/* 客製 */
+// // //banner
+// // .res-banner {
+// //   background-position: center;
+// //   background-repeat: no-repeat;
+// //   height: 100vh;
+// //   background-size: cover;
+// //   width: 100%;
+// //   max-height: 700px;
+// //   .res-slogan {
+// //     padding-top: 50px;
+// //   }
+// //   h1 {
+// //     text-align: center;
+// //     font-size: 60px;
+// //     padding-top: 100px;
+// //     color: $light-orange;
+// //     font-weight: 700;
+// //   }
 
-.ma-80 {
-  margin: 80px auto;
-}
-.mt-35 {
-  margin-top: 35px;
-}
+// //   h2 {
+// //     text-align: center;
+// //     font-size: 44px;
+// //     color: $light-green;
+// //     font-weight: 700;
+// //     padding-bottom: 20px;
+// //     padding-top: 5px;
+// //   }
+// //   @include mobile {
+// //     height: 50vh;
+// //     h1 {
+// //       font-size: 30px;
+// //       padding-top: 70px;
+// //     }
+// //     h2 {
+// //       font-size: 28px;
+// //       padding-bottom: 3px;
+// //     }
+// //   }
+// // }
 
-.fw-700 {
-  font-weight: 700;
-}
+// // /* 客製 */
 
-.mr-35 {
-  margin-right: 35px;
-}
+// // .ma-80 {
+// //   margin: 80px auto;
+// // }
+// // .mt-35 {
+// //   margin-top: 35px;
+// // }
 
-.title-fz {
-  font-size: 32px;
-  color: $dark-green;
-}
+// // .fw-700 {
+// //   font-weight: 700;
+// // }
 
-//banner-searchbar
+// // .mr-35 {
+// //   margin-right: 35px;
+// // }
 
-.search-group {
-  position: relative;
-}
 
-#address {
-  width: 45%;
-  height: 50px;
-  border-radius: 50px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid transparent;
-  box-shadow: (0px 3px 3px rgba(0, 0, 0, 0.25));
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 15px;
-  @include mobile {
-    width: 90%;
+// //banner-searchbar
 
-    margin-bottom: 10px;
-  }
-}
-#submit {
-  position: absolute;
-  background-color: $light-green;
-  border-radius: 50px;
-  margin-top: 15px;
-  right: 28%;
-  top: 5px;
-  width: 100px;
-  color: #fff;
-  border: none;
-  outline: none;
-  padding: 3px 18px;
-  @include mobile {
-    width: 80px;
-    right: 8%;
-  }
-}
+// // .search-group {
+// //   position: relative;
+// // }
 
-//標題線
-.titleBorder {
-  width: 100%;
-  border-bottom: 2px solid $dark-green;
-  position: relative;
-  margin: 0 auto;
+// // #address {
+// //   width: 40%;
+// //   height: 55px;
+// //   border-radius: 50px;
+// //   margin: 0 auto;
+// //   background-color: #fff;
+// //   border: 1px solid transparent;
+// //   box-shadow: (0px 3px 3px rgba(0, 0, 0, 0.25));
+// //   position: absolute;
+// //   left: 50%;
+// //   transform: translateX(-50%);
+// //   margin-top: 15px;
+// //   @include mobile {
+// //     width: 90%;
 
-  .res-title {
-    position: absolute;
-    top: -18px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 0px 20px;
-    letter-spacing: 3px;
-    text-indent: 3px;
-  }
+// //     margin-bottom: 10px;
+// //   }
+// // }
+// // #submit {
+// //   position: absolute;
+// //   background-color: $light-green;
+// //   border-radius: 50px;
+// //   margin-top: 15px;
+// //   right: 31%;
+// //   top: 8px;
+// //   width: 100px;
+// //   color: #fff;
+// //   border: none;
+// //   outline: none;
+// //   padding: 3px 18px;
+// //   @include mobile {
+// //     width: 80px;
+// //     right: 8%;
+// //   }
+// // }
 
-  @include mobile {
-    .res-title {
-      top: -13px;
-      padding: 0px 10px;
-    }
-    .title-fz {
-      font-size: 24px;
-    }
-  }
-}
+// //標題線
+// // .titleBorder {
+// //   width: 100%;
+// //   border-bottom: 2px solid $dark-green;
+// //   position: relative;
+// //   margin: 0 auto;
 
-//餐廳列表
-.reslist-card {
-  margin: 25px;
-  border-radius: 15px;
-  border: 2px solid $light-green;
-  overflow: hidden;
-}
+// //   .res-title {
+// //     position: absolute;
+// //     top: -18px;
+// //     left: 50%;
+// //     transform: translateX(-50%);
+// //     background-color: #fff;
+// //     padding: 0px 20px;
+// //     letter-spacing: 3px;
+// //     text-indent: 3px;
+// //   }
 
-.reslist-card:hover .foodImg {
-  transform: scale(1.03);
-}
+// //   @include mobile {
+// //     .res-title {
+// //       top: -13px;
+// //       padding: 0px 10px;
+// //     }
+// //     .title-fz {
+// //       font-size: 24px;
+// //     }
+// //   }
+// // }
 
-.foodImg {
-  width: 46%;
-  object-fit: cover;
-  transition: 0.7s;
-  border-radius: 15px 0 0 15px;
-}
+// //餐廳列表
+// .reslist-card {
+//   margin: 25px;
+//   border-radius: 15px;
+//   border: 2px solid $light-green;
+//   overflow: hidden;
+// }
 
-.reslist-txt {
-  padding: 15px 0 0 20px;
-  h3 {
-    color: $dark-green;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  p {
-    font-size: 20px;
-  }
-  .fas.fa-truck {
-    color: $dark-green;
-    margin-right: 10px;
-  }
+// .reslist-card:hover .foodImg {
+//   transform: scale(1.03);
+// }
 
-  .fas.fa-dollar-sign {
-    color: #ffb606;
-    margin-right: 12px;
-    font-size: 24px;
-  }
+// .foodImg {
+//   width: 46%;
+//   object-fit: cover;
+//   transition: 0.7s;
+//   border-radius: 15px 0 0 15px;
+// }
 
-  .far.fa-clock {
-    color: #fb6107;
-    margin-right: 10px;
-    font-size: 22px;
-  }
-  @include mobile {
-    line-height: 0;
-    padding: 5px 0 0 10px;
+// .reslist-txt {
+//   padding: 15px 0 0 20px;
+//   h3 {
+//     color: $dark-green;
+//     font-size: 24px;
+//     font-weight: 700;
+//   }
+//   p {
+//     font-size: 20px;
+//   }
+//   .fas.fa-truck {
+//     color: $dark-green;
+//     margin-right: 10px;
+//   }
 
-    .res-card {
-      margin: 20px auto;
-      border-radius: 15px;
-      border: 2px solid $light-green;
-      overflow: hidden;
-      width: 320px;
-      height: 150px;
-    }
-    h3 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 14px;
-    }
+//   .fas.fa-dollar-sign {
+//     color: #ffb606;
+//     margin-right: 12px;
+//     font-size: 24px;
+//   }
 
-    .foodImg {
-      width: 45%;
-    }
-    .reslist-title {
-      padding-top: 10px;
-    }
+//   .far.fa-clock {
+//     color: #fb6107;
+//     margin-right: 10px;
+//     font-size: 22px;
+//   }
+//   @include mobile {
+//     line-height: 0;
+//     padding: 5px 0 0 10px;
 
-    .fas.fa-truck {
-      font-size: 16px;
-    }
+//     .res-card {
+//       margin: 20px auto;
+//       border-radius: 15px;
+//       border: 2px solid $light-green;
+//       overflow: hidden;
+//       width: 320px;
+//       height: 150px;
+//     }
+//     h3 {
+//       font-size: 18px;
+//     }
+//     p {
+//       font-size: 14px;
+//     }
 
-    .fas.fa-dollar-sign {
-      font-size: 18px;
-    }
+//     .foodImg {
+//       width: 45%;
+//     }
+//     .reslist-title {
+//       padding-top: 10px;
+//     }
 
-    .far.fa-clock {
-      font-size: 18px;
-    }
-  }
-}
+//     .fas.fa-truck {
+//       font-size: 16px;
+//     }
 
-//人氣精選
+//     .fas.fa-dollar-sign {
+//       font-size: 18px;
+//     }
 
-.res-popular {
-  h3 {
-    color: $dark-green;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  p{
-    font-size: 16px;
-    margin-top: 2px;
-  }
+//     .far.fa-clock {
+//       font-size: 18px;
+//     }
+//   }
+// }
 
-  .res-popular-body {
-    background-color: rgba(255, 182, 6, 0.2);
-    padding: 10px 20px 25px;
-    border-radius: 0 0 15px 15px;
-  }
-  @include mobile {
-    margin: 10px 45px;
-    h3 {
-      font-size: 20px;
-    }
-  }
-}
+// //人氣精選
 
-//餐廳細節頁res-detail
+// .res-popular {
+//   h3 {
+//     color: $dark-green;
+//     font-size: 24px;
+//     font-weight: 700;
+//   }
+//   p{
+//     font-size: 16px;
+//     margin-top: 2px;
+//   }
 
-.resImg {
-  border-radius: 15px 0 0 15px;
-  @include mobile {
-    border-radius: 0px;
-  }
-}
-.res-production {
-  background-color: #ffb606;
-  height: 100%;
-  border-radius: 0 15px 15px 0px;
-  h3 {
-    font-size: 24px;
-    line-height: 1.5;
-    padding: 150px 100px;
-  }
+//   .res-popular-body {
+//     background-color: rgba(255, 182, 6, 0.2);
+//     padding: 10px 20px 25px;
+//     border-radius: 0 0 15px 15px;
+//   }
+//   @include mobile {
+//     margin: 10px 45px;
+//     h3 {
+//       font-size: 20px;
+//     }
+//   }
+// }
 
-  @include mobile {
-    border-radius: 0px;
-    h3 {
-      font-size: 20px;
-      padding: 110px 65px;
-    }
-  }
-}
-@include mobile {
-  h3 {
-    font-size: 16px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
+// //餐廳細節頁res-detail
 
-.res-connect {
-  h3 {
-    font-size: 24px;
-    padding-top: 50px;
-  }
-  @include mobile {
-    h3 {
-      font-size: 20px;
-      padding-top: 40px;
-    }
-  }
-}
-//菜單產品
-.res-menu {
-  .res-product-body {
-    padding: 5px 10px;
-    border-left: 2px solid $light-green;
-    border-right: 2px solid $light-green;
-    border-bottom: 2px solid $light-green;
-    border-radius: 0 0 15px 15px;
+// .resImg {
+//   border-radius: 15px 0 0 15px;
+//   @include mobile {
+//     border-radius: 0px;
+//   }
+// }
+// .res-production {
+//   background-color: #ffb606;
+//   height: 100%;
+//   border-radius: 0 15px 15px 0px;
+//   h3 {
+//     font-size: 24px;
+//     line-height: 1.5;
+//     padding: 150px 100px;
+//   }
 
-    h3 {
-      font-size: 20px;
-      color: $dark-green;
-      padding-top: 15px;
-    }
-  }
+//   @include mobile {
+//     border-radius: 0px;
+//     h3 {
+//       font-size: 20px;
+//       padding: 110px 65px;
+//     }
+//   }
+// }
+// @include mobile {
+//   h3 {
+//     font-size: 16px;
+//   }
+//   p {
+//     font-size: 14px;
+//   }
+// }
 
-  @include mobile {
-    margin: 5px 35px;
+// .res-connect {
+//   h3 {
+//     font-size: 24px;
+//     padding-top: 50px;
+//   }
+//   @include mobile {
+//     h3 {
+//       font-size: 20px;
+//       padding-top: 40px;
+//     }
+//   }
+// }
+// //菜單產品
+// .res-menu {
+//   .res-product-body {
+//     padding: 5px 10px;
+//     border-left: 2px solid $light-green;
+//     border-right: 2px solid $light-green;
+//     border-bottom: 2px solid $light-green;
+//     border-radius: 0 0 15px 15px;
 
-    .res-product-body {
-      padding: 0px 20px;
-    }
-    h3 {
-      font-size: 18px;
-    }
-  }
-}
+//     h3 {
+//       font-size: 20px;
+//       color: $dark-green;
+//       padding-top: 15px;
+//     }
+//   }
+
+//   @include mobile {
+//     margin: 5px 35px;
+
+//     .res-product-body {
+//       padding: 0px 20px;
+//     }
+//     h3 {
+//       font-size: 18px;
+//     }
+//   }
+// }

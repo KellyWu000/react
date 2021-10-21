@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../App.scss'
+import '../../App.scss'
 import { BsClock } from 'react-icons/bs'
 import { BsStarFill } from 'react-icons/bs'
 import { MdOutlineLocalShipping } from 'react-icons/md'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 import { FiHeart } from 'react-icons/fi'
 import { RiMoneyDollarCircleLine } from 'react-icons/ri'
-import { imgUrl } from '../config'
-import SortBtn from '../components/SortBtn'
-import TitleBorder from '../components/TitleBorder'
+import { imgUrl } from '../../config'
+import SortBtn from '../../components/SortBtn'
+import TitleBorder from '../../components/TitleBorder'
 import { Col, Row } from 'reactstrap'
 function ResList({listData}) {
   return (
@@ -18,7 +18,7 @@ function ResList({listData}) {
       {/* <Row className="justify-content-center"> */}
         <div class="row  justify-content-center"> 
       {listData.map((el,i)=>{
-         return  <div class="col-md-5  col-12  ">
+         return  <div class="col-md-5  col-12  key={i}">
       
           {/* <Col md={5} sm={12}> */}
 

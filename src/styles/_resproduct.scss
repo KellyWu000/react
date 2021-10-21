@@ -1,0 +1,28 @@
+//菜單產品
+.res-menu {
+    .res-product-body {
+      padding: 5px 10px;
+      border-left: 2px solid $light-green;
+      border-right: 2px solid $light-green;
+      border-bottom: 2px solid $light-green;
+      border-radius: 0 0 15px 15px;
+  
+      h3 {
+        font-size: 20px;
+        color: $dark-green;
+        padding-top: 15px;
+      }
+    }
+  
+    @include mobile {
+      margin: 5px 35px;
+  
+      .res-product-body {
+        padding: 0px 20px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+  

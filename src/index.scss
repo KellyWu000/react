@@ -1,2 +1,28 @@
 // 其它自訂樣式
-@import './styles/global.scss';
+// $dark-green: #2a593e;
+// $light-green: #8fc065;
+// $light-orange: #fb6107;
+// $light-yellow: #ffb606;
+
+
+// @import './styles/mixin';
+// @import './styles/button';
+// @import './styles/resbanner';
+// @import './styles/share';
+
+
+//顏色
+$dark-green: #2a593e;
+$light-green: #8fc065;
+$light-orange: #fb6107;
+$light-yellow: #ffb606;
+
+//import檔案
+
+@import './styles/mixin';
+@import './styles/global';
+@import './styles/button';
+@import './styles/resbanner';
+@import'./styles/reslist';
+@import'./styles/resproduct';
+// @import './styles/share';
