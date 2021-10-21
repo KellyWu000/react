@@ -2,14 +2,17 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { RiMapPinLine } from 'react-icons/ri'
 import { imgUrl } from '../config'
-function SortBtn({mapData}) {
+function SortBtn(props) {
+
+  const {mapData,lat,lng} =props
   const history = useHistory();
 
 
   const goToMap = () => {
     history.push({
       pathname:'/map',
-      state: { mapData }
+      state: {mapData,lat,lng},
+      
     });
   }
   return (
@@ -40,7 +43,7 @@ function SortBtn({mapData}) {
             <option value="">價格排序</option>
             <option value="1">100~200</option>
             <option value="2">200~300</option>
-            <option value="2">300~400</option>
+            <option value="3">300~400</option>
           </select>
         </div>
 
