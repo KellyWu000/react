@@ -2,12 +2,13 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import React from 'react'
 import { imgUrl } from '../../config'
 import TitleBorder from '../../components/TitleBorder'
-import ProductCard from '../../components/ProductCard'
+import ResProductCard from '../../components/Restaurant/ResProductCard'
+import ResPopular from '../../components/Restaurant/ResPopular'
 import { FiPhone } from 'react-icons/fi'
 import { RiMapPinLine } from 'react-icons/ri'
 import { BsClock } from 'react-icons/bs'
 
-function ResDetail() {
+function ResPrdoucts() {
   return (
     <>
       <div className="container">
@@ -18,7 +19,8 @@ function ResDetail() {
           <div className="col-md-5 col-sm-6 p-0">
             <img
               className="resImg"
-              src={`${imgUrl}/images/res.png`}
+              // src={`${imgUrl}/images/res.png`}
+              src={`http://localhost:3000/images/Restaurant/res.png`}
               alt=""
               style={{
                 width: '100%',
@@ -75,9 +77,9 @@ function ResDetail() {
       <div className="ma-80">
         <TitleBorder />
       </div>
-      <ProductCard />
+      <ResProductCard />
     </>
   )
 }
 
-export default ResDetail
+export default ResPrdoucts

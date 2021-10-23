@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { RiMapPinLine } from 'react-icons/ri'
-import { imgUrl } from '../config'
+import { imgUrl } from '../../config'
 function SortBtn(props) {
 
   const {mapData,lat,lng} =props
@@ -10,7 +10,7 @@ function SortBtn(props) {
 
   const goToMap = () => {
     history.push({
-      pathname:'/map',
+      pathname:'/resmap',
       state: {mapData,lat,lng},
       
     });
@@ -35,7 +35,8 @@ function SortBtn(props) {
             className="form-select form-select-sm"
             aria-label=".form-select-sm "
             style={{
-              backgroundImage: `url(${`${imgUrl}/images/arrow-icon.png`}) `,
+              // backgroundImage: `url(${`${imgUrl}/images/arrow-icon.png`}) `,
+              backgroundImage: `url('http://localhost:3000/images/Restaurant/arrow-icon.png')`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '90% center',
             }}
@@ -52,7 +53,7 @@ function SortBtn(props) {
             className="form-select form-select-sm"
             aria-label=".form-select-sm "
             style={{
-              backgroundImage: `url(${`${imgUrl}/images/arrow-icon.png`}) `,
+              backgroundImage: `url('http://localhost:3000/images/Restaurant/arrow-icon.png')`,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: '90% center',
             }}

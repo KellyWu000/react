@@ -23,23 +23,21 @@ code {
     monospace;
 }
 
-//客製
+
+//共用區
+//顏色
+$dark-green: #2a593e;
+$light-green: #8fc065;
+$light-orange: #fb6107;
+$light-yellow: #ffb606;
+
+//標題間距
 .ma-80 {
   margin: 80px auto;
 }
-.mt-35 {
-  margin-top: 35px;
-}
 
-.fw-700 {
-  font-weight: 700;
-}
+//標題線
 
-.mr-35 {
-  margin-right: 35px;
-}
-
-//共用區
 .titleBorder {
   width: 100%;
   border-bottom: 2px solid $dark-green;
@@ -56,6 +54,7 @@ code {
     transform: translateX(-50%);
     background-color: #fff;
     padding: 0px 20px;
+    font-weight: 700;
     letter-spacing: 3px;
     text-indent: 3px;
   }
@@ -70,3 +69,7 @@ code {
     }
   }
 }
+
+
+
+

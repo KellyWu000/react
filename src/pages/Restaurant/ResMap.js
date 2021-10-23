@@ -9,7 +9,7 @@ import { Icon } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import { useHistory } from 'react-router'
 
-function Map() {
+function  ResMap() {
   delete L.Icon.Default.prototype._getIconUrl
   L.Icon.Default.mergeOptions({
     iconUrl: markerIcon,
@@ -27,13 +27,14 @@ function Map() {
 
   return (
     <>
+
       <MapContainer
       // 中心點: 會是你輸入的經緯
         center={[history.location.state.lat, history.location.state.lng]}
         zoom={14}
         scrollWheelZoom={false}
         showPopup={true}
-        style={{ height: '100vh', width: '75%', padding: 0 }}
+        style={{ height: '100vh', width: '20%', padding: 0 }}
       >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -46,7 +47,14 @@ function Map() {
             return (
               <Marker key={index} position={[item.res_lng, item.res_lat]}>
                 <Popup>
-                  {item.res_name} <br /> {item.res_introduce}
+               
+                
+                <h4>{item.res_name} </h4> 
+                  {item.res_rate}
+                <p>{item.res_introduce}</p>
+                <p>{item.res_starttime}-{item.res_endtime	}</p>
+                
+                
                 </Popup>
             </Marker>
             )
@@ -58,7 +66,6 @@ function Map() {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
-
         <Marker position={[25.0723999, 121.4627451]}>
           <Popup>
             A pretty 2222222. <br /> Easily customizable.
@@ -69,4 +76,4 @@ function Map() {
   )
 }
 
-export default Map
+export default ResMap

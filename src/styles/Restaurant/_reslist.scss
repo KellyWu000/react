@@ -1,9 +1,14 @@
+//客製
+.mt-35 {
+  margin-top: 35px;
+}
 //餐廳列表
 .reslist-card {
     margin: 25px;
     border-radius: 15px;
     border: 2px solid $light-green;
     overflow: hidden;
+    height: 200px;
   }
   
   .reslist-card:hover .foodImg {

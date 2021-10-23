@@ -1,9 +1,9 @@
 import React from 'react'
 import { FiHeart } from 'react-icons/fi'
-import { imgUrl } from '../config'
+import { imgUrl } from '../../config'
 
 
-function Popular(props) {
+function ResPopular (props) {
     return (
         <>
                <div className="container mx-auto">
@@ -13,7 +13,8 @@ function Popular(props) {
               <div className="res-popular-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                  // src={`${imgUrl}/images/food.jpg`}
+                  src={` http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -51,7 +52,7 @@ function Popular(props) {
               <div className="res-popular-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                  src={` http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -89,7 +90,7 @@ function Popular(props) {
               <div className="res-popular-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                  src={` http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -130,5 +131,5 @@ function Popular(props) {
 
 
 
-export default Popular
+export default ResPopular
 

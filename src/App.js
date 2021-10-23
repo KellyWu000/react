@@ -3,14 +3,14 @@ import React from 'react'
 import './App.scss'
 import { imgUrl } from './config'
 import Home from './pages/Home'
-import Restaurants from './pages/res-pages/Restaurants'
-import ResList from './pages/res-pages/ResList'
-import Map from './pages/res-pages/Map'
-import ResDetail from './pages/res-pages/ResDetail'
+import Restaurants from './pages/Restaurant/Restaurants'
+import ResList from './pages/Restaurant/ResList'
+import ResMap from './pages/Restaurant/ResMap'
+import ResProducts from './pages/Restaurant/ResProducts'
 import Menu from './components/Menu'
-import Shop from './pages/Shop'
-import FoodShot from './pages/FoodShot'
-import CustomMeal from './pages/CustomMeal'
+// import Shop from './pages/Shop'
+// import FoodShot from './pages/FoodShot'
+// import CustomMeal from './pages/CustomMeal'
 
 
 
@@ -27,13 +27,13 @@ function App() {
             <Route path="/reslist">
               <ResList />
             </Route>
-            <Route path="/map">
-              <Map />
+            <Route path="/resmap">
+              <ResMap />
             </Route>
-            <Route path="/resdetail">
-              <ResDetail />
+            <Route path="/resprdoucts">
+              <ResProducts />
             </Route>
-            <Route path="/custom-meal">
+            {/* <Route path="/custom-meal">
               <CustomMeal />
             </Route>
             <Route path="/shop">
@@ -41,7 +41,7 @@ function App() {
             </Route>
             <Route path="/food-shot">
               <FoodShot />
-            </Route>
+            </Route> */}
             <Route exact path="/">
               <Home />
             </Route>

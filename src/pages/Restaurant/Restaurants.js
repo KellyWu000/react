@@ -3,14 +3,15 @@ import React, { useRef, useState, useEffect } from 'react'
 import '../../App.scss'
 import { BsCursor } from 'react-icons/bs'
 import { imgUrl } from '../../config'
+// import { RESTAURANT } from '../../config'
 import ResList from './ResList'
-import SortBtn from '../../components/SortBtn'
-import Popular from '../../components/Popular'
+import SortBtn from '../../components/Restaurant/SortBtn'
+import Popular from '../../components/Restaurant/ResPopular'
 import TitleBorder from '../../components/TitleBorder'
 import Geocode from 'react-geocode'
 import { apiKey } from '../../api/googleApi'
 import { useHistory } from 'react-router-dom'
-import { data } from '../../data'
+// import { data } from '../../data'
 
 
 function Restaurants(props) {
@@ -21,11 +22,24 @@ function Restaurants(props) {
   const history = useHistory()
   const myRef = useRef(null)
 
+ async function  test(){
+      let r= await fetch('http://localhost:3002/reslist');
+      let j = await r.json();
+      if(j.length){
+        setApiData(j);
+      }
+      
+  }
+useEffect(()=>{
+  test();
+},[])
+ 
+  
   const onSubmit = () => {
     // history.push('/map')
-    setApiData(data);
-    myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    Geocode.setApiKey(apiKey)
+   test();
+    myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })//滾動效果
+    Geocode.setApiKey(apiKey)//輸入地址抓經緯度
     Geocode.setLanguage('zh-TW')
     Geocode.setRegion('tw')
     Geocode.enableDebug()
@@ -39,19 +53,26 @@ function Restaurants(props) {
     }
     )
   }
+// useEffect (()=>{
+//   (async()=>{
+//     let r= await fetch(ResList);
+//     let j = await r.json();
+//     if(j.apiData){
+//       setApiData(j);
+//     }
+//     })();
+//   },[]);
+   
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setApiData(data);
-  //   }, 1000);
-  // },[])
 
   return (
     <>
       <div
-        className="res-banner"
+        className="res-banner p-0"
         style={{
-          backgroundImage: `url(${`${imgUrl}/images/banner.jpg`})`,
+          // backgroundImage: `url(${`${imgUrl}/images/banner.jpg`})`,
+          backgroundImage: `url('http://localhost:3000/images/Restaurant/banner.jpg')`,
+
         }}
       >
         <div className="res-slogan">
@@ -79,7 +100,7 @@ function Restaurants(props) {
         </div>
       </div>
 
-      {/* <img className="bannerImg" src={`${imgUrl}/images/banner.jpg`} alt="" /> */}
+ 
       <div className="ma-80" ref={myRef}>
         <TitleBorder />
       </div>

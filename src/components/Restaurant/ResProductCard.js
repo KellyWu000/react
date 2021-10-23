@@ -1,7 +1,7 @@
 import React from 'react'
-import { imgUrl } from '../config'
+import { imgUrl } from '../../config'
 
-function ProductCard(props) {
+function ResProductCard(props) {
     return (
         <>
                <div className="container mx-auto">
@@ -11,7 +11,8 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                  // src={`${imgUrl}/images/food.jpg`}
+                  src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -41,7 +42,7 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                     src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -72,7 +73,7 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                     src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -103,7 +104,7 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                     src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -133,7 +134,7 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                     src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -163,7 +164,7 @@ function ProductCard(props) {
               <div className="res-pic-wrapper">
                 <img
                   className="foodImg"
-                  src={`${imgUrl}/images/food.jpg`}
+                     src={`http://localhost:3000/images/Restaurant/food.jpg`}
                   alt=""
                   style={{
                     width: '100%',
@@ -196,5 +197,5 @@ function ProductCard(props) {
 
 
 
-export default ProductCard
+export default ResProductCard
 
