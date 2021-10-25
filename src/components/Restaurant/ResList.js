@@ -20,8 +20,6 @@ function ResList({listData}) {
          return  <div class="col-md-5  col-12  key={i}">
       
           {/* <Col md={5} sm={12}> */}
-
-
             <div class="reslist-card d-flex  ">
 
             {/* <img className="foodImg" src={`${imgUrl}/images/food.jpg`} alt="" /> */}
@@ -33,11 +31,6 @@ function ResList({listData}) {
                  >
                 <h3>{el.res_name}</h3>
                 </Link>
-
-
-               
-
-
                 <span>
                   <FiHeart
                     style={{
