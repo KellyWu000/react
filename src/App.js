@@ -4,7 +4,7 @@ import './App.scss'
 import { imgUrl } from './config'
 import Home from './pages/Home'
 import Restaurants from './pages/Restaurant/Restaurants'
-import ResList from './pages/Restaurant/ResList'
+import ResList from './components/Restaurant/ResList'
 import ResMap from './pages/Restaurant/ResMap'
 import ResProducts from './pages/Restaurant/ResProducts'
 import Menu from './components/Menu'
@@ -24,15 +24,13 @@ function App() {
             <Route path="/restaurants">
               <Restaurants />
             </Route>
-            <Route path="/reslist">
+            {/* <Route path="/reslist">
               <ResList />
-            </Route>
+            </Route> */}
             <Route path="/resmap">
               <ResMap />
             </Route>
-            <Route path="/resprdoucts">
-              <ResProducts />
-            </Route>
+            <Route path="/resprdoucts/:id" component={ResProducts} />
             {/* <Route path="/custom-meal">
               <CustomMeal />
             </Route>

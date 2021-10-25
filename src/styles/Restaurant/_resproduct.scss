@@ -1,3 +1,50 @@
+  //餐廳細節頁res-detail
+  
+  .resImg {
+    border-radius: 15px 0 0 15px;
+    @include mobile {
+      border-radius: 0px;
+    }
+  }
+  .res-production {
+    background-color: #ffb606;
+    height: 100%;
+    border-radius: 0 15px 15px 0px;
+    h3 {
+      font-size: 24px;
+      line-height: 1.5;
+      padding: 150px 100px;
+    }
+  
+    @include mobile {
+      border-radius: 0px;
+      h3 {
+        font-size: 20px;
+        padding: 110px 65px;
+      }
+    }
+  }
+  @include mobile {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  .res-connect {
+    h3 {
+      font-size: 24px;
+      padding-top: 50px;
+    }
+    @include mobile {
+      h3 {
+        font-size: 20px;
+        padding-top: 40px;
+      }
+    }
+  }
 //菜單產品
 .res-menu {
     .res-product-body {

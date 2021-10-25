@@ -8,8 +8,8 @@
     border-radius: 15px;
     border: 2px solid $light-green;
     overflow: hidden;
-    height: 200px;
-  }
+    height: 190px;
+  
   
   .reslist-card:hover .foodImg {
     transform: scale(1.03);
@@ -23,14 +23,15 @@
   }
   
   .reslist-txt {
-    padding: 15px 0 0 20px;
+    width: 185px;
+    padding: 12px 0 0 10px ;
     h3 {
       color: $dark-green;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 700;
     }
     p {
-      font-size: 20px;
+      font-size: 18px;
     }
     .fas.fa-truck {
       color: $dark-green;
@@ -48,31 +49,27 @@
       margin-right: 10px;
       font-size: 22px;
     }
+    }
     @include mobile {
-      line-height: 0;
-      padding: 5px 0 0 10px;
+      margin: 20px;
+        height: 170px;
+    
+    
   
-      .res-card {
-        margin: 20px auto;
-        border-radius: 15px;
-        border: 2px solid $light-green;
-        overflow: hidden;
-        width: 320px;
-        height: 150px;
-      }
-      h3 {
+        .reslist-txt {
+          padding: 5px 8px 0 7px ;
+            h3 {
         font-size: 18px;
       }
       p {
         font-size: 14px;
-      }
-  
+        padding-bottom: 0;    
+        }
+        }
       .foodImg {
         width: 45%;
       }
-      .reslist-title {
-        padding-top: 10px;
-      }
+   
   
       .fas.fa-truck {
         font-size: 16px;
@@ -109,55 +106,16 @@
     @include mobile {
       margin: 10px 45px;
       h3 {
-        font-size: 20px;
+        font-size: 18px;
       }
-    }
-  }
-  
-  //餐廳細節頁res-detail
-  
-  .resImg {
-    border-radius: 15px 0 0 15px;
-    @include mobile {
-      border-radius: 0px;
-    }
-  }
-  .res-production {
-    background-color: #ffb606;
-    height: 100%;
-    border-radius: 0 15px 15px 0px;
-    h3 {
-      font-size: 24px;
-      line-height: 1.5;
-      padding: 150px 100px;
-    }
-  
-    @include mobile {
-      border-radius: 0px;
-      h3 {
-        font-size: 20px;
-        padding: 110px 65px;
+      p{
+        font-size: 14px;
       }
-    }
-  }
-  @include mobile {
-    h3 {
-      font-size: 16px;
-    }
-    p {
-      font-size: 14px;
+      .res-popular-body {
+        padding: 5px 20px 2px;
+
+      }
+
     }
   }
   
-  .res-connect {
-    h3 {
-      font-size: 24px;
-      padding-top: 50px;
-    }
-    @include mobile {
-      h3 {
-        font-size: 20px;
-        padding-top: 40px;
-      }
-    }
-  }

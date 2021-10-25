@@ -4,9 +4,9 @@ import '../../App.scss'
 import { BsCursor } from 'react-icons/bs'
 import { imgUrl } from '../../config'
 // import { RESTAURANT } from '../../config'
-import ResList from './ResList'
+import ResList from '../../components/Restaurant/ResList'
 import SortBtn from '../../components/Restaurant/SortBtn'
-import Popular from '../../components/Restaurant/ResPopular'
+import ResPopular from '../../components/Restaurant/ResPopular'
 import TitleBorder from '../../components/TitleBorder'
 import Geocode from 'react-geocode'
 import { apiKey } from '../../api/googleApi'
@@ -19,6 +19,7 @@ function Restaurants(props) {
   const [lng, setLng] = useState(121.543575)
   const [address, setAddress] = useState('')
   const [apiData, setApiData] = useState([]);
+  const optionList =[{name:"價格排序",}] 
   const history = useHistory()
   const myRef = useRef(null)
 
@@ -102,17 +103,20 @@ useEffect(()=>{
 
  
       <div className="ma-80" ref={myRef}>
-        <TitleBorder />
+        <TitleBorder name="健康餐盒" />
       </div>
 
       <div className="container d-flex  justify-content-center ">
-        <SortBtn mapData={apiData} lat={lat} lng ={lng}/>
+        <SortBtn mapData={apiData} lat={lat} lng ={lng} name="地圖模式"  sortName="評分排序" />
       </div>
       <div className="container mt-35" >
 
         <ResList listData={apiData}/>
       </div>
-      <Popular />
+      <div className="ma-80" ref={myRef}>
+        <TitleBorder name="人氣精選" />
+      </div>
+      <ResPopular />
     </>
   )
 }

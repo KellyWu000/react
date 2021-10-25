@@ -6,7 +6,7 @@ function TitleBorder(props) {
       <>
         <div className="container ">
           <div class="titleBorder ">
-            <h4 className=" res-title title-fz fw-700">健康餐盒</h4>
+            <h4 className=" res-title title-fz fw-700">{props.name}</h4>
           </div>
         </div>
       </>

@@ -27,7 +27,7 @@ function SortBtn(props) {
                   marginBottom: '4px',
                 }}
               />{' '}
-              地圖模式
+            {props.name}
             </button>
         </div>
         <div className="col-md-4  col-6 ">
@@ -41,10 +41,11 @@ function SortBtn(props) {
               backgroundPosition: '90% center',
             }}
           >
-            <option value="">價格排序</option>
-            <option value="1">100~200</option>
-            <option value="2">200~300</option>
-            <option value="3">300~400</option>
+            <option value="">平均價格</option>
+            <option value="1">100-150</option>
+            <option value="2">150-200</option>
+            <option value="3">200~250</option>
+            <option value="3">250~300</option>
           </select>
         </div>
 
@@ -58,7 +59,7 @@ function SortBtn(props) {
               backgroundPosition: '90% center',
             }}
           >
-            <option value="">評分排序</option>
+            <option value="">{props.sortName}</option>
             <option value="1">最高評分</option>
             <option value="2">最低評分</option>
           </select>

@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useHistory } from 'react-router-dom'
 import '../../App.scss'
 import { BsClock } from 'react-icons/bs'
 import { BsStarFill } from 'react-icons/bs'
 import { MdOutlineAttachMoney } from 'react-icons/md'
 import { FiHeart } from 'react-icons/fi'
 import { imgUrl } from '../../config'
-import SortBtn from '../../components/Restaurant/SortBtn'
-import TitleBorder from '../../components/TitleBorder'
+
 import { Col, Row } from 'reactstrap'
 function ResList({listData}) {
+
+
   return (
     <>
     
@@ -21,15 +22,22 @@ function ResList({listData}) {
           {/* <Col md={5} sm={12}> */}
 
 
- <div class="reslist-card d-flex  ">
+            <div class="reslist-card d-flex  ">
 
             {/* <img className="foodImg" src={`${imgUrl}/images/food.jpg`} alt="" /> */}
             <img className="foodImg" src={` http://localhost:3000/images/Restaurant/food.jpg`} alt="" />
             <div className="reslist-txt  ">
               <div className="reslist-title d-flex justify-content-between ">
-                <Link to="/resprdoucts">
+
+                <Link to={"/resprdoucts/"+el.res_id}
+                 >
                 <h3>{el.res_name}</h3>
                 </Link>
+
+
+               
+
+
                 <span>
                   <FiHeart
                     style={{
@@ -87,9 +95,7 @@ function ResList({listData}) {
         
       {/* </Row> */}
 
-      <div className="ma-80">
-        <TitleBorder />
-      </div>
+    
    
     </>
   )
